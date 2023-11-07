@@ -1,159 +1,118 @@
 
-/* varaibles
-    data-types
-
-    String  - text 
-    Number
-        inter
-        float/double
-    Boolean  - true /false
-    undefined  (js specific)  // varaible is declared but forgot to put value
-    null  - empty
-
-
-    collections
-        array 
-        object
-
-]*/
-
-windowNumber = 3
-
-console.log("number of window =", windowNumber);
-
-
-greetingWord = 'hello'
-
-console.log(greetingWord, "ram")
-console.log(greetingWord, "hari")
-console.log(greetingWord, "shyam")
-
-
-var color = "red"
-let brand = "samsung"
-const ACTIVE_STATUS = false     /// false is fetched from database
-
-
-console.log(color);
-console.log(brand);
-console.log(ACTIVE_STATUS);
-
-/* initialziation  and declartion */
-
-
-/* donot use var */
-var price = 10000
-var price = 99999.55
-console.log("price", price);
-
-
+/* code here.. */
 /* 
-let length  = 100
-let length  = 9999  // error: cannot reclare length varaible again
+    Array 
+    let <varaibleName> =  [  <element>, <element>  ]
 
-console.log("length",length);
- */
-
-
-let height;  // variable declartion
-height = 5 // initialzation
-height = 6 // re-initialzation
-height = 7 // re-initialzation  can be re-initialized any number of times...
-
-console.log("height", height)
-
-
-let width = 10  // variable declartion & initialzaiton
-console.log("width", width)
-
-
-const PI = 3.145;
-// PI = 3.1456 // cannot change constant varaible
-console.log("PI", PI);
-
-
-const DOMAIN = "http://xyz.com"
-let path1 = "/wikipedia/commons/thumb/e/e0/Git-logo.svg/200px-Git-logo.svg.png"
-let path2 = "/wikipedia/commons/thumb/e/e0/Git-logo.svg/200px-node-log.svg.png"
-
-
-let fullPath1 = DOMAIN + path1
-let fullPath2 = DOMAIN + path2
-
-
-
-let count
-console.log(count)
-
-
-
-let fruit1 = "apple"
-let fruit2 = "orange"
-let fruit3 = "kiwi"
-
-// let fruits = "apple","orange","kiwi"
-// let fruits = "apple,orange,kiwi"
-
-
-
-/*
-        Array
-         - collection of multiple values
-
-*/
-let fruits = ["apple", "oprange", "kiwi"]
-console.log("fruits", fruits)
-
-let students = ["ram", 9811, "shyam", 986, "hari", "ram", 9741]
-console.log("students", students);
-
-
-
-/* Object
-
-    let <varaibleName> = {
-            <key or property or attribute> : <value>,
-            <key>: <value>
-
+    Object
+    let <objName> = {
+        <key> : <value>,
+        <key> : <value>,
+        <key> : <value>,
+        <key> : <value>,
     }
 
- */
+*/
 
 
-// let student1 = ["ram", 98111,9866]
-
-let student1 = {
-    "name":"ram",
-    "age":20,
-    class:10,
-    phoneNumber:98111,
-    alernatePhoneNumber:9851
+let member1 = {
+    name: "ABC",
+    phone: 98666,
+    role: "father"
 }
 
-console.log(student1);
-
-let projectorBrand = "samsung"
-let projectorPrice = 100000
-let projectorColor = "white"
-
-
-let projector1 = {
-    brand:"samsung",
-    color:"white",
-    price: 100000,
-}
-let projector2 = {
-    brand:"lg",
-    color:"white",
-    price: 50000,
+let member2 = {
+    name: "XYZ",
+    phone: 985566,
+    role: "mother"
 }
 
+let member3 = {
+    name: "IJK",
+    phone: 985566,
+    role: "sister"
+}
 
-console.log(projector1);
-console.log(projector2);
+let familyMembers = [member1, member2, member3]
+
+
+console.log(familyMembers)
+
+
+let friends = [
+    {
+        name: "ram",
+        address: "balaju"
+    },
+    {
+        name: "sita",
+        address: "lainchaur"
+    },
+]
+
+console.log(friends);
+
+// let course1 = {
+//     title: "mern",
+//     students: ["abc", "xyz"]
+// }
+
+// console.log(course1);
+
+
+let person1 = {
+    name: "ram",
+    address: {
+        province: 3,
+        district: "Kahtmandu",
+        ward: 1,
+        street: "galli"
+    },
+    salary: {
+        value: 500,
+        unit: "Rs."
+    },
+    phones: [
+        { type: "ncell", date: "2022" },
+        { type: "ntc", date: "2021" },
+    ]
+}
+
+/*
+    research 
+    code here
+
+
+    cahnge the name ram to sita
+    cahnge the slary unit Rs. to $
+*/
 
 
 
+console.log(person1);
+console.log(person1.name)
+console.log(person1.salary.value)
+
+/* Salary of Sita is Rs.10000 */
+console.log(" Salary of", person1.name, "is", person1.salary.unit, person1.salary.value);
+console.log("Salary of " + person1.name + " is " + person1.salary.unit + person1.salary.value);
+console.log(`Salary of ${person1.name} is ${person1.salary.unit}${person1.salary.value}`);
+
+/* string concatenation */
+/* template literal / string literal */
+
+
+let greetingText = "Hi"
+console.log(greetingText, "world")
+console.log(greetingText + ' Hello world')
+console.log(`${greetingText} world`)
+
+
+
+
+// let console = {
+//     log: funciton
+// }
 
 
 
