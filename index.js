@@ -1,118 +1,123 @@
 
-/* code here.. */
-/* 
-    Array 
-    let <varaibleName> =  [  <element>, <element>  ]
 
-    Object
-    let <objName> = {
-        <key> : <value>,
-        <key> : <value>,
-        <key> : <value>,
-        <key> : <value>,
+
+let courses = [
+    {
+        title: "web",
+        time: "4-5",
+        students: [
+            {
+                name: "ram",
+                address: {}
+            },
+            {
+                name: "sita",
+                address: {}
+            },
+        ]
+    },
+    {
+        title: "pyhton",
+        time: "4-5"
     }
-
-*/
-
-
-let member1 = {
-    name: "ABC",
-    phone: 98666,
-    role: "father"
-}
-
-let member2 = {
-    name: "XYZ",
-    phone: 985566,
-    role: "mother"
-}
-
-let member3 = {
-    name: "IJK",
-    phone: 985566,
-    role: "sister"
-}
-
-let familyMembers = [member1, member2, member3]
-
-
-console.log(familyMembers)
-
-
-let friends = [
-    {
-        name: "ram",
-        address: "balaju"
-    },
-    {
-        name: "sita",
-        address: "lainchaur"
-    },
 ]
 
-console.log(friends);
 
-// let course1 = {
-//     title: "mern",
-//     students: ["abc", "xyz"]
-// }
-
-// console.log(course1);
+let color = "red"
 
 
-let person1 = {
-    name: "ram",
-    address: {
-        province: 3,
-        district: "Kahtmandu",
-        ward: 1,
-        street: "galli"
-    },
-    salary: {
-        value: 500,
-        unit: "Rs."
-    },
-    phones: [
-        { type: "ncell", date: "2022" },
-        { type: "ntc", date: "2021" },
-    ]
+/* code here */
+color = "white"
+
+console.log({ "color": color });
+console.log({ color });
+
+
+let course1 = {
+    title: "web",
+    time: "4-5 PM",
 }
 
-/*
-    research 
-    code here
+
+/* code here.. */
+
+console.log(course1.title)
+console.log(course1.time)
+
+course1.title = "web develoopment"
+course1.time = "3-4 PM"
+
+console.log(`time of ${course1.title} is ${course1.time}`)
 
 
-    cahnge the name ram to sita
-    cahnge the slary unit Rs. to $
+/* Array 
+    collection of similar datas
+
+    syntax
+
+    let <arrayVaraibleName> = [ <element>, <element>  ] 
+
+    Index 
+        always starts with 0
+
+*/
+let fruits = ["apple", "orange", "kiwi"]
+
+console.log(fruits[2])
+console.log(fruits[0])
+
+/* let task1 = {
+    title: "html",
+    status: "completed"
+}
+
+let task2 = {
+    title: "css",
+    status: "completed"
+}
+
+let task3 = {
+    title: "js",
+    status: "ongoing"
+}
+
+let todosList = [task1, task2, task3] */
+
+let todos = [
+    {
+        // index: 0,
+        title: "html",
+        status: "pending"
+    },
+    {
+        // index: 1,
+        title: "css",
+        status: "pending"
+    },
+    {
+        // index: 2,
+        title: "js",
+        status: "ongoing"
+    }
+]
+
+/* html is completed  */
+/* css is completed  */
+/* js is pending  */
+
+/* TODO:  code here..
+  convert pending of html and css to completed...
 */
 
+console.log(todos[0].title)
 
+let task1 = todos[0]
+console.log(task1.title);
 
-console.log(person1);
-console.log(person1.name)
-console.log(person1.salary.value)
+console.log(`${todos[0].title} is ${todos[0].status}`);
+console.log(`${todos[1].title} is ${todos[1].status}`);
+console.log(`${todos[2].title} is ${todos[2].status}`);
 
-/* Salary of Sita is Rs.10000 */
-console.log(" Salary of", person1.name, "is", person1.salary.unit, person1.salary.value);
-console.log("Salary of " + person1.name + " is " + person1.salary.unit + person1.salary.value);
-console.log(`Salary of ${person1.name} is ${person1.salary.unit}${person1.salary.value}`);
-
-/* string concatenation */
-/* template literal / string literal */
-
-
-let greetingText = "Hi"
-console.log(greetingText, "world")
-console.log(greetingText + ' Hello world')
-console.log(`${greetingText} world`)
-
-
-
-
-// let console = {
-//     log: funciton
-// }
 
 
 

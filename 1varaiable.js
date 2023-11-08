@@ -12,11 +12,18 @@
         eg: courseName
 
     data types
-        text  - String
+        "text"  - String
         number  - Number
                 - integer (whole number)
                 - double/float (decimanl)
         true/false - Boolean
+        null
+        undefined
+
+
+        collections
+        array  [element,element ]
+        object  {key:value,key:value}
 
 */
 
