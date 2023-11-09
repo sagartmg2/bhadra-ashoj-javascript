@@ -1,123 +1,69 @@
+/* Array , Object mutation.
 
+    index in ararys ... always starts with 0 
 
+*/
 
-let courses = [
+let sports = ["soccer", "volleyball", "cricket"]
+console.log(sports[0]);
+sports[0] = "football"  // this will update soccer text to football
+console.log(sports);
+
+let price = 5000
+price = 100000
+console.log(price);
+
+let sportsWithDetail = [
     {
-        title: "web",
-        time: "4-5",
-        students: [
-            {
-                name: "ram",
-                address: {}
-            },
-            {
-                name: "sita",
-                address: {}
-            },
-        ]
+        title: "soccer",
+        country: "abc",
+        events: ["world cup"],
     },
     {
-        title: "pyhton",
-        time: "4-5"
+        title: "cricket",
+        country: "xyz",
+        events: [
+            {
+                title: "olympics",
+                hostcountry: "abc",
+            },
+            {
+                title: "asian games",
+                hostcountry: "xyz",
+            },
+        ]  // convert olympics to world cup via code
     }
 ]
 
-
-let color = "red"
-
-
-/* code here */
-color = "white"
-
-console.log({ "color": color });
-console.log({ color });
+// sportsWithDetail[1].events[0] = "WORLD CUP"
+console.log(sportsWithDetail[1].events[0]);
+console.log(sportsWithDetail);
 
 
-let course1 = {
-    title: "web",
-    time: "4-5 PM",
+// sportsWithDetail[0].title = "football"
+// console.log( sportsWithDetail[0].title   );
+// console.log(sportsWithDetail) /// soccer should be change to football
+
+/* 
+    RESEARCH ON 
+        ARROW Function
+        IF ELSE 
+        TERNARY OPERATOR
+        Asynchronous tasks / promises..s
+ */
+
+
+
+let person = {
+    name: "ram"
 }
+// code here
 
+person.name = "sita"
+person.age = 10
+console.log(person)
 
-/* code here.. */
-
-console.log(course1.title)
-console.log(course1.time)
-
-course1.title = "web develoopment"
-course1.time = "3-4 PM"
-
-console.log(`time of ${course1.title} is ${course1.time}`)
-
-
-/* Array 
-    collection of similar datas
-
-    syntax
-
-    let <arrayVaraibleName> = [ <element>, <element>  ] 
-
-    Index 
-        always starts with 0
-
-*/
-let fruits = ["apple", "orange", "kiwi"]
-
-console.log(fruits[2])
-console.log(fruits[0])
-
-/* let task1 = {
-    title: "html",
-    status: "completed"
-}
-
-let task2 = {
-    title: "css",
-    status: "completed"
-}
-
-let task3 = {
-    title: "js",
-    status: "ongoing"
-}
-
-let todosList = [task1, task2, task3] */
-
-let todos = [
-    {
-        // index: 0,
-        title: "html",
-        status: "pending"
-    },
-    {
-        // index: 1,
-        title: "css",
-        status: "pending"
-    },
-    {
-        // index: 2,
-        title: "js",
-        status: "ongoing"
-    }
-]
-
-/* html is completed  */
-/* css is completed  */
-/* js is pending  */
-
-/* TODO:  code here..
-  convert pending of html and css to completed...
-*/
-
-console.log(todos[0].title)
-
-let task1 = todos[0]
-console.log(task1.title);
-
-console.log(`${todos[0].title} is ${todos[0].status}`);
-console.log(`${todos[1].title} is ${todos[1].status}`);
-console.log(`${todos[2].title} is ${todos[2].status}`);
-
-
-
-
+let games = ["soccer", "volleyball", "cricket"]
+console.log(games[3]);
+games[3] = "basketball"
+console.log(games);
