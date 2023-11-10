@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let images = [
+            "/200/300",
+            "/200/301",
+            "/200/302",
+            "/200/303",
+            "/200/304",
+            "/200/305",
+            "/200/306",
+            "/200/307",
+            "/200/308",
+        ]
+
+        const DOMAIN = "https://picsum.photos"
+
+        function makeFullUrl(partialUrl) {
+            let fullUrl = DOMAIN + partialUrl;
+            return fullUrl
+        }
+
+        document.write(`
+                <h1> Dom Manipulation</h1>
+                <img src="${makeFullUrl(images[0])}" />
+                <img src="${makeFullUrl(images[1])}" />
+                <img src="${makeFullUrl(images[2])}" />
+                <img src="${makeFullUrl(images[3])}" />
+                <img src="${makeFullUrl(images[4])}" />
+                <img src="${makeFullUrl(images[5])}" />
+            `)
+    </script>
+</body>
+
+</html>

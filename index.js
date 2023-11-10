@@ -1,69 +1,91 @@
-/* Array , Object mutation.
-
-    index in ararys ... always starts with 0 
-
-*/
-
-let sports = ["soccer", "volleyball", "cricket"]
-console.log(sports[0]);
-sports[0] = "football"  // this will update soccer text to football
-console.log(sports);
-
-let price = 5000
-price = 100000
-console.log(price);
-
-let sportsWithDetail = [
+let persons = [
     {
-        title: "soccer",
-        country: "abc",
-        events: ["world cup"],
+        name: "ram",
+        phones: [9855, 9841]
     },
     {
-        title: "cricket",
-        country: "xyz",
-        events: [
-            {
-                title: "olympics",
-                hostcountry: "abc",
-            },
-            {
-                title: "asian games",
-                hostcountry: "xyz",
-            },
-        ]  // convert olympics to world cup via code
-    }
+        name: "shyam",
+    },
 ]
+/* asdd phone numbers for shyam too.  */
+/* code here.. */
 
-// sportsWithDetail[1].events[0] = "WORLD CUP"
-console.log(sportsWithDetail[1].events[0]);
-console.log(sportsWithDetail);
+/* functions  */
 
-
-// sportsWithDetail[0].title = "football"
-// console.log( sportsWithDetail[0].title   );
-// console.log(sportsWithDetail) /// soccer should be change to football
 
 /* 
-    RESEARCH ON 
-        ARROW Function
-        IF ELSE 
-        TERNARY OPERATOR
-        Asynchronous tasks / promises..s
- */
+    Simply print them in console.
+
+     1 +  2 = 3
+     3 + 4 = 7 
+     1 + 4 = 5 
+     3 + 1 = 4 
+     3 + 4 = 7 
+
+*/
+/*  */
 
 
+/* console.log(`1 + 3 = ${1 + 3}`);
+console.log(`2 + 2 = ${2 + 2}`);
+console.log(`3 + 2 = ${3 + 2}`);
+console.log(`4 + 2 = ${4 + 2}`); */
 
-let person = {
-    name: "ram"
+
+/* DRY  */
+/* function  */
+
+
+function doSomething() {
+    console.log("do something.");
 }
-// code here
 
-person.name = "sita"
-person.age = 10
-console.log(person)
+// doSomething()
+// doSomething()
+// doSomething()
 
-let games = ["soccer", "volleyball", "cricket"]
-console.log(games[3]);
-games[3] = "basketball"
-console.log(games);
+
+function double(input) {  // input here is called a paramater
+    console.log(input) // 2 at first, 4 at second function call  and so on..
+    console.log(`2 x ${input} = ${2 * input}`);
+}
+
+// double(2)  // 2 here is called an arguement 
+// double(4) // 4 here is called an arguement 
+// double(8)
+
+
+console.log(typeof (1212));
+console.log(typeof ("hello"));
+console.log(typeof (true));
+
+
+
+function sum(number1, number2) {
+    let result = number1 + number2
+    // console.log({number1},{number2});
+    console.log(`${number1} + ${number2} = ${result}`);
+}
+
+sum(10, 2)
+sum(10, 20)
+sum(100, 20)
+sum(100, 70)
+
+// console.log("1" +  1) // type casting
+// console.log("5" - 1) // type casting
+// console.log("five" - 1) // type casting
+
+
+function diff(number1, number2) {
+    // console.log(`the diff of ${number1} and  ${number2}  is ${ number1 - number2}`);
+
+    let result = number1 - number2
+    return result
+    // return undefined  // by default
+}
+
+console.log("diff", diff(100, 50));
+console.log("diff", diff(10, 50));
+
+console.log(diff(20, 10))
