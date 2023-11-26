@@ -1,85 +1,58 @@
-/* conditions: if else */
 
 
+let names = ["ram", "hari", "shyam", "gita", "abc", "xyz"]
+// let names = ["ram", "hari"]
 
-/* 
-if ( condition  ){
+// console.log(names[0]);
+// console.log(names[1]);
 
-}
- */
-
-/* 
-if (true) {
-    console.log("true statement");
-} else {
-    console.log("false statement");
+function printName(index) {
+    console.log(names[index]);
 }
 
+// printName(0)
+// printName(1)
 
-if ( 10 > 10) {
-    console.log("true statement");
-} else {
-    console.log("false statement");
-} */
-
-
-
-let willRain = true
-let hasProbability = false
-
-/* 
-if (willRain) {
-    console.log("take umbrella");
-} else {
-    console.log("no need");
-} 
-*/
-
-if (willRain) {
-    console.log("take umbrella");
-} else {
-    if (hasProbability) {
-        console.log("your wish");
-    } else {
-        console.log("no need");
-    }
+console.log(names.length);
+for (let index = 0; index < names.length; index++) {
+    console.log("index", index, "name", names[index])
 }
 
-if (willRain) {
-    console.log("take umbrella");
-} else if (hasProbability) {
-    console.log("your wish");
-} else {
-    console.log("no need");
+let topics = [
+    // { title: "html", status: "completed" },
+    // { title: "css", status: "completed" },
+    // { title: "js", status: "pending" },
+    { title: "html", status: true },
+    { title: "css", status: true },
+    { title: "js", status: false },
+]
+
+// console.log(`${topics[0].title} is ${topics[0].status}  `);
+// console.log(`${topics[1].title} is ${topics[1].status}  `);
+
+/* reserach : callback function, ternary operator, forEach, map, filter, find */
+/* advance reserach : asynchronous function  */
+
+function printTopicStatus(index) {
+    console.log(`${topics[index].title} is ${topics[index].status}  `);
 }
 
-let user1 = {
-    name: "ram",
-    role: "receptionist"
+// printTopicStatus(0)
+// printTopicStatus(1)
+// printTopicStatus(2)
+
+for (let index = 0; index < topics.length; index++) {
+    console.log(`${topics[index].title} is ${topics[index].status}  `);
 }
 
-let user2 = {
-    name: "shyam",
-    role: "manager"
-}
+/* html is compoleted */
+/* css is compoleted */
+/* js is pending */
+/* node is pending */
+/* react is pending */
+/* mongdb is pending */
 
-let user3 = {
-    name: "hari",
-    role: "client"
-}
-
-/* who can access the vault */
-const REQUIRED_ROLE = "manager"
-
-checkAccess(user1) 
-checkAccess(user2)
-checkAccess(user3)
-
-/* ternary operator   ? */
-
-
-
-
+// ternary operator
 
 
 
