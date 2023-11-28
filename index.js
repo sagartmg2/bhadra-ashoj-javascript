@@ -1,61 +1,60 @@
-let topics = [
-    { title: "html", status: true },
-    { title: "css", status: true },
-    { title: "js", status: false },
-]
-
-/* html is compoleted */
-/* css is compoleted */
-/* js is pending */
-
-// console.log(`${topics[1].title} is ${topics[1].status}`);
-// console.log(`${topics[2].title} is ${topics[2].status}`);
-
-// for (let index = 0; index < topics.length; index++) {
-//     console.log(` ${topics[index].title} is ${topics[index].status}`);
-// }
-
-// for (let index = 0; index < topics.length; index++) {
-//     if (topics[index].status) {
-//         console.log(`  ${topics[index].title} is completed `);
-//     } else {
-//         console.log(`${topics[index].title} is pending `);
-//     }
-// }
 
 
-for (let index = 0; index < topics.length; index++) {
-    // if (topics[index].status) {
-    //     console.log(`  ${topics[index].title} is completed `);
-    // } else {
-    //     console.log(`${topics[index].title} is pending `);
-    // }
-
-    /* ternary operator */
-    // topics[index].status ? console.log(`  ${topics[index].title} is completed `) : console.log(`${topics[index].title} is pending `);
-
-    let topicStauts = topics[index].status
-    let title = topics[index].title
-
-    console.log(` ${title} is ${topicStauts ? "completed" : "pending"} `)
-
+let dashboard = {
+    total: 100,
+    expired: 24,
+    out_of_stock: 20
 }
 
+/*
 
-let willRain = true
-let hasProbabilty = true;
+TODO: CONVERT THE  VALUES OF ABOVE OBJECT TO NEPALI 
+
+__________________________________________________________________________________________________
 
 
-if (willRain) {
-    console.log("take umbrealla");
-} else if (hasProbabilty) {
-    console.log("as you wish");
-} else {
-    console.log("no need.");
-}
+let nepali_digits = ["०", "१", "२", "३", "४", "५", "६", "७", "८", "९"];
 
-/* Ternary operator  -- single line if-else  */
 
-console.log(willRain ? "take it" : "no need"); 
-console.log(willRain ? "take it" : (hasProbabilty ? "your wish" : "no need"));
+You may need these concepts
+    number.toString()
+    string.trim()
+    string.split()
+    loop
+    function
+
+
+__________________________________________________________________________________________________
+
+OUTPUT SHOULD BE AS BELOW
+
+    dashboard = {
+        total: "१००"
+        expired: "२४",
+        out_of_stock: "२०"
+    }
+
+    
+*/
+
+// console.log( converToNepali(100) ); 
+
+let numbers = [1, 2, 3, 4, 5]
+let doubledNumbers
+let evenNumbers;
+
+/* code here */
+/* 
+
+hint: push method of any arry
+    let names = ["ram","shyam"]
+    names.push("hari")
+    names // ["ram","shyam","hari"]
+
+*/
+
+console.log(doubledNumbers); // [2,4,6,8,10]
+console.log(evenNumbers); // [2,4]  // hint: if else   and modolus( % ) && push
+
+
 
