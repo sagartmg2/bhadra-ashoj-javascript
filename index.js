@@ -1,71 +1,91 @@
-
-
-let dashboard = {
-    total: 100,
-    expired: 24,
-    out_of_stock: 20
+/* asynchronous programming 
+         tasks that runs in background
+         task that donot block other following codes
+*/
+let doSomTask = () => {
+    console.log("inside timeout");
 }
 
-let data = [
-    {
-        total: 100,
-        expired: 24,
-        out_of_stock: 20
-    },
-    {
-        total: 200,
-        expired: 124,
-        out_of_stock: 120
-    }
-]
-
-/*
-
-TODO: CONVERT THE  VALUES OF ABOVE OBJECT TO NEPALI 
-
-__________________________________________________________________________________________________
+setTimeout(doSomTask, 3000)
 
 
-let nepali_digits = ["०", "१", "२", "३", "४", "५", "६", "७", "८", "९"];
+try {
+    let firstName = "first"
+    let lastName = "last"
+    let fullName = firstName + lastName
+    console.log("fullanem is ", fullName);
+}
+catch (err) {
+    console.log(err.message)
+}
 
 
-You may need these concepts
-    number.toString()
-    string.trim()
-    string.split()
-    loop
-    function
+
+console.log(1);
+console.log(2);
+doSomething()
+for (let index = 0; index < 10; index++) {
+    console.log("index", index);
+}
+console.log(3);
+console.log(4);
+
+function doSomething() {
+    console.log("do somehting");
+}
+
+// callback function   -- a function passed as parameter to another function 
 
 
-__________________________________________________________________________________________________
 
-OUTPUT SHOULD BE AS BELOW
 
-    dashboard = {
-        total: "१००"
-        expired: "२४",
-        out_of_stock: "२०"
-    }
 
-    
+/* promise 
+        - pending
+        - resolve
+        - reject
 */
 
-// console.log( converToNepali(100) );  //"१००"
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        // resolve(["ram", "hari", "shyam"])
+        reject("network error")
+    }, 1000)
+})
 
-let nepali_digits = ["०", "१", "२", "३", "४", "५", "६", "७", "८", "९"];
+console.log(promise);
 
-const converToNepali = (input) => {
-    let output = ""
-    input = input.toString() // "100"
-    let inputArr = input.split("") //  ['1', '0', '0']
+/* 
 
-    inputArr.forEach(el => {
-        // output = output + nepali_digits[el]
-        output += nepali_digits[el]
-    })
+promise.then((response) => {
+    console.log({ response })
+}).catch((err) => {
+    console.log({err})
+    alert("error is fe\tching data .. please try again later..")
+})
+console.log("after promise");
 
-    return output
+*/
+
+/* async await  */
+/* callback hell */
+
+async function fetchData() {
+
+    try {
+        let count = await promise
+        console.log("we have total of ", count, "users");
+    }
+    catch (err) {
+        console.log({ err })
+        alert("error is fe\tching data .. please try again later..")
+    }
 }
 
-console.log(converToNepali(100));
-console.log(converToNepali(500));
+fetchData()
+
+function sum(num1, num2) {
+    return num1 + num2
+}
+
+console.log(sum(1, 2));

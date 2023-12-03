@@ -57,6 +57,10 @@ console.log("albanaia", findCountryCode("Albania")   );
 console.log("afganistan", findCountryCode("afghanistan")   );
 console.log("nepal", findCountryCode("nepal")   );
 
+
+
+console.log( "using find",  countries.find(el => el.name == "Albania" ).code   );
+
 // let afganCode = findCountryCode("Afghanistan")
 // console.log({ afganCode })
 
