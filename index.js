@@ -89,3 +89,8 @@ function sum(num1, num2) {
 }
 
 console.log(sum(1, 2));
+console.log(sum(1, 2, 3));
+console.log(sum(1, 2, 4));
+console.log(sum(1, 2, 3, 4, 5, 6, 7, 8));
+
+/* rest operator  */
